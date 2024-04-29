@@ -12,7 +12,79 @@
 
 
 /* comienza GALERIA */
+.cont-galeria1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+}
 
+.card1 {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    background: url(../imagenes/galeria/pareja/beso.jpeg);
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center; 
+    border-radius: 5px;
+}
+.card2 {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    background: url(../imagenes/galeria/pareja/beso2.jpeg);
+    aspect-ratio: 16/9;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+
+
+}
+.card3 {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    background: url(../imagenes/galeria/pareja/pareja1.svg);
+    aspect-ratio: 16/9;
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 5px;
+
+
+}
+.card1.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.close-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .cont-galeria1 {
+        flex-wrap: wrap; 
+    }
+    .card1 {
+        width: calc(100% - 20px); 
+    }
+    .card2 {
+        width: calc(100% - 20px); 
+    }
+    .card3 {
+        width: calc(100% - 20px); 
+    }
+}
 
 
 /*finaliza  GALERIA */
