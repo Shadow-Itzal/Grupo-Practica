@@ -2,7 +2,8 @@
 *{
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
+        
 }
 
 
@@ -12,48 +13,135 @@
 
 
 /* comienza GALERIA */
+/* .body{
+    overflow: hidden;
+} */
+.contenedor-general{
+    width: 100vw;
+    height: 70vh;
+    background-color: #bca896;
+}
 .cont-galeria1 {
+    width: 70%;
+    background-color: #eae4d0;
+    position: absolute;
+    transform: translateX(-100%); /* Iniciar fuera de la pantalla */
+    animation: desplazamiento 1s linear forwards 2s; /* Agregamos animation-fill-mode: forwards; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
     padding: 30px;
     border: 1px solid grey;
     border-radius: 5px;
-    margin: 10px;
+    
+    /* Esto es para la animación */
+    
+}
+.cont-galeria2 {
+    width: 70%;
+    background-color: #eae4d0;
+    position: absolute;
+    transform: translateX(150%) translateY(60vh); /* Iniciar fuera de la pantalla */
+    animation: desplazamiento2 1s linear forwards 4s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .card1 {
-    width: calc(33.33% - 20px); 
-    margin-bottom: 20px; 
+    
     background: url(../imagenes/galeria/pareja/beso.jpeg);
-    aspect-ratio: 16/9;
-    background-size: cover;
-    background-position: center; 
-    border-radius: 5px;
+    
 }
 .card2 {
-    width: calc(33.33% - 20px); 
-    margin-bottom: 20px; 
+    
     background: url(../imagenes/galeria/pareja/beso2.jpeg);
-    aspect-ratio: 16/9;
-    background-size: cover; 
-    background-position: center; 
-    border-radius: 5px;
-
-
+    
+    
 }
 .card3 {
+    
+    background: url(../imagenes/galeria/pareja/pareja1.svg);
+    
+}
+.card4 {
+    
+    background: url(../imagenes/galeria/salon/panoramica.svg);
+    
+}
+.card5 {
+    
+    background: url(../imagenes/galeria/salon/altar1.svg);
+    
+    
+}
+.card6 {
+    
+    background: url(../imagenes/galeria/salon/altar2.svg);
+    
+}
+.card {
     width: calc(33.33% - 20px); 
     margin-bottom: 20px; 
-    background: url(../imagenes/galeria/pareja/pareja1.svg);
     aspect-ratio: 16/9;
     background-size: cover; 
     background-position: center; 
     border-radius: 5px;
-
+    cursor: pointer;
 
 }
 .card1.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.card1.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.card2.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.card3.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.card4.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.card5.agrandar{
+    width: 70%; /* O cualquier otro tamaño que desees */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.card6.agrandar{
     width: 70%; /* O cualquier otro tamaño que desees */
     position: fixed;
     top: 50%;
@@ -71,8 +159,12 @@
     cursor: pointer;
 }
 
+
 @media screen and (max-width: 768px) {
     .cont-galeria1 {
+        flex-wrap: wrap; 
+    }
+    .cont-galeria2 {
         flex-wrap: wrap; 
     }
     .card1 {
@@ -84,9 +176,33 @@
     .card3 {
         width: calc(100% - 20px); 
     }
+    .card4 {
+        width: calc(100% - 20px); 
+    }
+    .card5 {
+        width: calc(100% - 20px); 
+    }
+    .card6 {
+        width: calc(100% - 20px); 
+    }
 }
-
-
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(-100%); /* Posición inicial fuera de la pantalla */
+    }
+    100% {
+        transform: translateX(10vw); /* Posición final en el centro de la pantalla */
+    }
+}
+@keyframes desplazamiento2 {
+    0% {
+        transform: translateX(150%) translateY(60vh); /* Posición inicial fuera de la pantalla a la derecha */
+    }
+    100% {
+        transform: translateX(10vw) translateY(60vh);
+        opacity: 1; /* Posición final en el centro de la pantalla */
+    }
+}
 /*finaliza  GALERIA */
 
 
