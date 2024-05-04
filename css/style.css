@@ -25,8 +25,8 @@
     width: 70%;
     background-color: #eae4d0;
     position: absolute;
-    transform: translateX(-100%); /* Iniciar fuera de la pantalla */
-    animation: desplazamiento 1s linear forwards 2s; /* Agregamos animation-fill-mode: forwards; */
+    transform: translateX(-100%); 
+    animation: desplazamiento 1s linear forwards 2s; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -102,7 +102,7 @@
     z-index: 999;
 }
 .card1.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
+    width: 70%; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -110,7 +110,7 @@
     z-index: 999;
 }
 .card2.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
+    width: 70%; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -118,7 +118,7 @@
     z-index: 999;
 }
 .card3.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
+    width: 70%; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -126,7 +126,7 @@
     z-index: 999;
 }
 .card4.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
+    width: 70%; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -134,7 +134,7 @@
     z-index: 999;
 }
 .card5.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
+    width: 70%; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -142,7 +142,7 @@
     z-index: 999;
 }
 .card6.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
+    width: 70%; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -200,7 +200,7 @@
     }
     100% {
         transform: translateX(10vw) translateY(60vh);
-        opacity: 1; /* Posición final en el centro de la pantalla */
+        opacity: 1; 
     }
 }
 /*finaliza  GALERIA */
