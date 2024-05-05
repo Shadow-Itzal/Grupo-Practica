@@ -235,7 +235,7 @@ footer{
 }
 @keyframes desplazamiento2 {
     0% {
-        transform: translateX(150%) translateY(60vh); /* Posición inicial fuera de la pantalla a la derecha */
+        transform: translateX(150%) translateY(60vh); 
     }
     100% {
         transform: translateX(10vw) translateY(60vh);
