@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(234, 228, 208);
+}
+
+header {
+    background-color: #776f6f;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* arreglo de 1º parrafo de Conoceme */
+.frase1 {
+    
+    padding: 30px 70px 30px 70px;
+    margin: 30px;
+    /* display: inline; */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+}
+
+.frase1-negrita {
+    /* display: block; */
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Las 3 imagenes de Conoceme */
+
+.contenedor-imagenes{
+     display: flex; /* utilizar flexbox */
+    justify-content: center; /* centrar horizontalmente las imagenes */
+}
+
+.imagen-con-espacio {
+    border: 2px solid #333; /* agregar un contorno */
+    margin: 5px; /* espaciado entre las imagenes */
+    max-width: 30%; /* ancho para imagen */
+}
+
+/* El texto justificado */
+
+.contenedor-texto-imagen {
+    display: flex;
+}
+
+.texto-justificado {
+    flex: 1;
+    margin: 60px 40px;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.fotografa {
+    flex: 1;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+}
