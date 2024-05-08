@@ -55,10 +55,10 @@ footer{
 .cont-galerias{
     font-size: 2rem;
     width: 100%;
-    height: 900px;
+    height: auto;
     /* display: flex;
-    justify-content: stretch;
-    overflow:hidden; */
+    justify-content: stretch; */
+    overflow:hidden; 
     padding-left: 20px;
     background-color: antiquewhite;
 }
@@ -96,121 +96,35 @@ footer{
 
     
 }
-<<<<<<< HEAD
-.card1.agrandar{
-    width: 70%; /* O cualquier otro tamaño que desees */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.card1.agrandar{
-    width: 70%; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.card2.agrandar{
-    width: 70%; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.card3.agrandar{
-    width: 70%; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.card4.agrandar{
-    width: 70%; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.card5.agrandar{
-    width: 70%; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.card6.agrandar{
-    width: 70%; 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}
-.close-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 1px solid #000;
-    cursor: pointer;
-}
-
-
-@media screen and (max-width: 768px) {
-    .cont-galeria1 {
-        flex-wrap: wrap; 
-    }
-    .cont-galeria2 {
-        flex-wrap: wrap; 
-    }
-    .card1 {
-        width: calc(100% - 20px); 
-    }
-    .card2 {
-        width: calc(100% - 20px); 
-    }
-    .card3 {
-        width: calc(100% - 20px); 
-    }
-    .card4 {
-        width: calc(100% - 20px); 
-    }
-    .card5 {
-        width: calc(100% - 20px); 
-    }
-    .card6 {
-        width: calc(100% - 20px); 
-    }
-}
-@keyframes desplazamiento {
-    0% {
-        transform: translateX(-100%); /* Posición inicial fuera de la pantalla */
-    }
-    100% {
-        transform: translateX(10vw); /* Posición final en el centro de la pantalla */
-    }
-}
-@keyframes desplazamiento2 {
-    0% {
-        transform: translateX(150%) translateY(60vh); 
-    }
-    100% {
-        transform: translateX(10vw) translateY(60vh);
-        opacity: 1; 
-    }
-=======
 .cont-gal1 img:hover{
-    width: 80%;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
     
->>>>>>> nuevo
+}
+.gal2{
+    position: relative;
+    margin-bottom: 20px;
+    left: 200px;
+}
+footer.gal{
+    width: 100%;
+    height: 200px;
+}
+@media screen and (max-width: 768px) {
+    .cont-gal1 img:hover{
+        width: 80%;
+        aspect-ratio: 16 / 9;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        
+    }
+    .gal2{
+        position: relative;
+        margin-bottom: 20px;
+        left: 100px;
+    }
 }
  
 /*finaliza  GALERIA */
