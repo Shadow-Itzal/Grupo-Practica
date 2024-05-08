@@ -1,20 +1,27 @@
 let closeButton;
 function agrandar(img) {
     // Aplica estilos para agrandar la imagen
-    img.classList.add('agrandar');
-    
-    // Crea un botón de cierre para volver a la vista previa
-    closeButton = document.createElement('button');
-    closeButton.innerText = 'Cerrar';
-    closeButton.classList.add('close-button');
-    closeButton.onclick = function() {
-        event.stopPropagation();
-        img.classList.remove('agrandar');
-        closeButton.remove(this); 
+  
+    img.classList.add('agranda');
+    if(!closeButton){
+
+        // Crea un botón de cierre para volver a la vista previa
+        closeButton = document.createElement('button');
+        closeButton.innerText = 'Cerrar';
+        closeButton.classList.add('close-button');
+        closeButton.onclick = function() {
+            
+                event.stopPropagation();
+                img.classList.remove('agranda');
+                console.log(closeButton);
+                closeButton.remove(this);
+                 closeButton = null;
+                
+        };
         
-        console.log(closeButton);
-    };
+        // Agrega el botón de cierre en card
+        img.appendChild(closeButton);
+    }
+    }
     
-    // Agrega el botón de cierre en card
-    img.appendChild(closeButton);
-}
+
