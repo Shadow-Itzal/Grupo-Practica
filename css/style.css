@@ -287,6 +287,105 @@ footer.gal{
 
 /* comienza CONTACTO */
 
+/*vista en laptop*/
+#formulario{
+    background-color: rgb(202, 157, 98);
+    border: 2px solid rgb(99, 77, 48);;
+    padding: 10px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 10%;
+    width: 35%;
+    border-radius: 2%;
+
+    
+}
+#formulario form div label input, textarea{
+    border-radius: 2%;
+    
+}
+.contacto a{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.contacto{
+    float: left;
+    margin-top: 10%;
+    
+    padding: 10px;
+    width: 45%;
+    /*border: 2px solid black;*/
+}
+.menu{
+    background-color: black;
+}
+
+#whatsapp{
+    color: green;
+   
+
+}
+#mail{
+    color: red;
+}
+#instagram{
+    color: #be17c4
+}
+
+#ubicacion{
+    color: red;
+}
+/*vista en Mobile */
+@media screen and (max-width:576px){
+    #formulario{
+        width: 100%;
+        margin: 0 ;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+    }
+
+    .contacto{
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #mapa{
+        width: 250px;
+        padding: 4%;
+    }
+    
+}
+
+/*vista en dispositivos medium/tablet*/
+@media screen and (min-width: 577px)and (max-width:900px){
+    #formulario{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 2%;
+        box-sizing: border-box;
+        padding-left: 5%;
+        
+    }
+
+    .contacto{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        box-sizing: border-box;
+    }
+
+    #mapa{
+        width: 100%;
+       
+        padding: 0%;
+    }
+    
+}
+
 
 
 /* finaliza CONTACTO */
