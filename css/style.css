@@ -141,7 +141,7 @@ section{
 }
 
 .seccion-imagenes p {
-    width: 300px; /* Ancho fijo para cada lección */
+    width: 300px; /* Ancho fijo */
     margin: 20px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
