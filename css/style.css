@@ -80,7 +80,10 @@ section{
 .seccion1{
     display: flex;
     text-align: center;
-    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50vh; /* Altura del viewport */
+
 
 }
 .seccion1 img{
@@ -99,8 +102,18 @@ section{
     float: right;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 10px;
+    padding: 50px;
     background-color: rgba(255, 255, 255, 0.341);
+
+}
+
+.seccion1 h4{
+    display: flex;
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    margin: 15px;
+    font-size: 20px;
+    color: rgb(83, 53, 12);
 
 
 }
@@ -125,6 +138,7 @@ section{
 .presentacion video{
     width: 500px;
     height:300px; 
+    border:  solid rgb(255, 255, 255);
 
 }
 
