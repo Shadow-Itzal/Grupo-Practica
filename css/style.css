@@ -172,7 +172,8 @@ footer.gal{
 
 
 
-/* comienza CONÓCEME */
+    /* comienza CONÓCEME */
+
 
 /* arreglo de 1º parrafo de Conoceme - centrado con palabras en negrita*/
 
@@ -224,7 +225,7 @@ footer.gal{
 }
 
 
-/* El texto justificado */
+/* El texto justificado  con foto de fotografa */
 
 .contenedor-texto-imagen {
     display: flex; /* los elementos hijos se colocan una al lado del otro */
@@ -239,7 +240,7 @@ footer.gal{
 .texto-justificado {
     flex: 1; /* significa que ocuparan el mismo espacio horizontal dentro del contenedor */
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -247,12 +248,12 @@ footer.gal{
 .fotografa {
     flex: 1;
     padding-left: auto; /*espacio entre el texto y la imagen */
-    margin-right: 20%;
+    margin-right: 10%;
     margin-left: 5%;
 }
 
 .fotografa img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -264,7 +265,7 @@ footer.gal{
     flex-flow: row wrap; 
     justify-content: space-evenly;
     align-items: center;
-    margin: 33px;
+    margin: 30px;
     padding: 20px;
     font-size: 1.2rem;
 }
@@ -278,6 +279,130 @@ footer.gal{
 .texto-derecho {
     flex: 1;
     text-align: right;
+}
+
+
+    /* ............... */
+    /* Media Queries - Estilos generales */
+
+/* Estilos para pantallas pequeñas - Smartphone (hasta 767px de ancho) */
+@media screen and (max-width: 767px) {
+
+
+/* 1º parrafo centrado y negrita */
+.frase1 {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.frase1-negrita {
+    font-size: 1.3rem;
+}
+
+
+/* subtitulo h2 */
+.subtitulo-conoceme {
+    font-size: 1.5rem;
+}
+
+
+/* El texto justificado  con foto de fotografa */
+
+.contenedor-texto-imagen {
+    flex-direction: column;
+}
+
+.texto-justificado {
+    font-size: 1rem;
+}
+
+.fotografa {
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+
+/* preguntas frecuentes */
+
+.contenedor-preguntas {
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.texto-izquierdo {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.texto-derecho {
+    text-align: center;
+    padding-right: 25px;
+}
+
+}
+
+    /* ............... */
+
+/* Estilos para pantallas medianas - Tablets (de 768px a 1023px de ancho) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+/* 1º parrafo centrado y negrita */
+.frase1 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+.frase1-negrita {
+    font-size: 1.6;
+}
+
+
+/* subtitulo h2 */
+
+.subtitulo-conoceme {
+    font-size: 1.7rem;
+}
+
+
+    /* El texto justificado  con foto de fotografa */
+
+.contenedor-texto-imagen {
+    display: flex; /* los elementos hijos se colocan una al lado del otro */
+    flex-flow: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+    
+.texto-justificado {
+    flex: 1; /* significa que ocuparan el mismo espacio horizontal dentro del contenedor */
+    text-align: justify;
+    font-size: 1.2rem;
+    }
+
+.fotografa {
+    flex: 1;
+    padding-left: auto; /*espacio entre el texto y la imagen */
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+.fotografa img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* preguntas frecuentes */
+
+.contenedor-preguntas {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
 }
 
 
