@@ -286,7 +286,7 @@ footer.gal{
 }
 
 .frase1 p {
-    display: block; /* hace que un elemento de conporte como un bloque*/
+    display: block; /* hace que un elemento de comporte como un bloque*/
     line-height: 1.5; /* ajusta el espaciado entre lineas del texto */
     max-width: 60%; /* ancho maximo del parrafo */
     font-size: 1.5rem; /* tamaño del texto */
@@ -325,36 +325,34 @@ footer.gal{
 }
 
 
-/* El texto justificado  con foto de fotografa */
+/* El texto centrado con foto de fotografa y nombre */
 
-.contenedor-texto-imagen {
-    display: flex; /* los elementos hijos se colocan una al lado del otro */
+.contenedor-texto-imagen{
+    display: flex;
     text-align: center;
-    flex-flow: row wrap; 
-    justify-content: space-evenly;
     align-items: center;
+    margin-left: 150px;
+}
+
+.contenedor-texto-imagen div{
+    width: 300px;
     margin: 20px;
-    padding: 20px;
+    float: right;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.341);
+    font-size: 1.2rem;
 }
 
-.texto-justificado {
-    flex: 1; /* significa que ocuparan el mismo espacio horizontal dentro del contenedor */
-    text-align: justify;
-    font-size: 1.3rem;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.fotografa {
-    flex: 1;
-    padding-left: auto; /*espacio entre el texto y la imagen */
-    margin-right: 10%;
-    margin-left: 5%;
-}
-
-.fotografa img {
-    max-width: 70%;
-    height: auto;
+.contenedor-texto-imagen img{
+    height: 400px; /* altura de imagen */
+    width: 400px; /* ancho de imagen */
+    border: 1px solid white;
+    border-radius: 3%;
+    background-color: rgba(202, 157, 98, 0.52);
+    float: left;
+    margin: 20px;
 }
 
 
@@ -406,19 +404,20 @@ footer.gal{
 }
 
 
-/* El texto justificado  con foto de fotografa */
+/* El texto centrado con foto de fotografa y nombre */
 
 .contenedor-texto-imagen {
     flex-direction: column;
+    margin-left: auto;
 }
 
-.texto-justificado {
+.contenedor-texto-imagen div {
     font-size: 1rem;
 }
 
-.fotografa {
-    padding-top: 5px;
-    margin-top: 10px;
+.contenedor-texto-imagen img {
+    height: 200px; 
+    width: 200px;
 }
 
 
@@ -466,28 +465,23 @@ footer.gal{
 }
 
 
-    /* El texto justificado  con foto de fotografa */
+    /* El texto centrado con foto de fotografa y nombre */
 
 .contenedor-texto-imagen {
-    display: flex; /* los elementos hijos se colocan una al lado del otro */
-    flex-flow: row; 
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
+    margin-left: 8px;
+    margin-right: 13px;
 }
     
-.texto-justificado {
-    flex: 1; /* significa que ocuparan el mismo espacio horizontal dentro del contenedor */
-    text-align: justify;
+.contenedor-texto-imagen div {
     font-size: 1.2rem;
     }
 
-.fotografa {
-    flex: 1;
-    padding-left: auto; /*espacio entre el texto y la imagen */
+.contenedor-texto-imagen img {
+    height: 250px;
+    width: 250px;
+    /* padding-left: auto;espacio entre el texto y la imagen
     margin-right: 5%;
-    margin-left: 2%;
+    margin-left: 2%; */
 }
 
 .fotografa img {
