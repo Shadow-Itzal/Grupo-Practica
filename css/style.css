@@ -105,6 +105,29 @@ section{
 
 }
 
+.presentacion {
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50vh; /* Altura del viewport */
+}
+
+.presentacion p {
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.341);
+}
+
+.presentacion video{
+    width: 500px;
+    height:300px; 
+
+}
+
 .seccion-imagenes {
     display: flex;
     flex-wrap:wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
