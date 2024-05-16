@@ -708,6 +708,12 @@ footer a:hover{
     margin: 20px;
 }
 
+.contenedor-texto-imagen h4 {
+    display: flex;
+    color: rgb(83, 53, 12);
+    font-size: 1.2rem;
+}
+
 
 /* preguntas frecuentes */
 
